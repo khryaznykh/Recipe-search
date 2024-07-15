@@ -1,3 +1,8 @@
+### Recipe search app
+This front-end app is created to help you to find recipe for the ingredients that you have. I've used API with over 2.3 million recipes. To find the recipe that fits you, simply enter the ingredients in the input field and click search(or press Enter). Ingrediants must be entered with numeric quantity. (Ex. 1 cup rice, 2 avocado)
+This app wil show you all recepies that are matching your search request. Pick one (or more) and enjoy!
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +73,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+If there will be any issues with the app, first check the API. You may need to get registered (https://www.edamam.com/) and get your own ID and KEY to start using it. 
+Any other issues feel free to email me at katehryaznykh@gmail.com, subject "GitHub - issue/question"
+
+
+You can use this app as learning material.
+
