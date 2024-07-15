@@ -1,38 +1,112 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .App {
-  text-align: center;
+  background-color: rgba(171, 177, 175, 0.5);
+  margin: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+}
+.containerarrow {
+  display: flex;
+  justify-content: left;
+}
+.recipesArranged {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.recipe {
+  width: 400px;
+  background-color: rgba(171, 177, 175, 0.7);
+  margin-top: 20px;
+}
+form {
+  width: 100vw;
+}
+input {
+  width: 70%;
+  padding: 10px;
+  background-color: rgba(169, 176, 174, 0.5);
+  font-size: 20px;
+  color: rgb(33, 25, 25);
+  font-family: 'Rubik', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonSearch {
+  padding: 5px;
+  font-size: 20px;
+  width: 200px;
+  margin-right: 60px;
+  background-color: rgb(41, 131, 106);
+  border-style: ridge;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bolder;
+}
+p, h1,h2, li {
+  font-family: 'Rubik', sans-serif;
+}
+.line {
+  display: flex;
+}
+h1 {
+  font-size: 35px;
+}
+p {
+  font-size: 14px;
+  font-weight: 500;
+}
+li {
+  font-size: 16px;
+  list-style: none;
+}
+img {
+  border: 3px black solid;
+  border-radius: 20px;
+}
+.arrow {
+  border: none;
+  width: 20px
+}
+.line {
+  border: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width:500px) {
+  .buttonSearch {
+    width: fit-content;
+    margin-right: 20px;
+    font-size: 16px;
+  } 
+  input {
+    width: 60%;
+    font-size: 16px;
   }
-  to {
-    transform: rotate(360deg);
+  h1 {
+    text-align: center;
+  }
+  .App {
+  margin: 10px;
+}
+}
+@media all and (max-width: 400px) {
+  .recipesArranged {
+    padding: 10px;
+  }
+  .recipe {
+    width: 290px;
+    margin-top: 10px;
+  }
+  img {
+    width: 200px
   }
 }
