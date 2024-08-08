@@ -21,6 +21,7 @@ function App() {
     fetchMyRecipes()
   }, [myFinalSearch])
 
+    console.log(myRecipes);
   const myRecipeSearch = (e) => {
     setMySearch(e.target.value)
   }

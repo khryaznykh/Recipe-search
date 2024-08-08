@@ -20,15 +20,13 @@ function RecipesToShow({name, cuisine, image, calories, digest, ingridients}) {
             </div>
             <div className="container">
                 {digest.map ((nutrivalue, index) => {
-                    if (index < 3) {
-                        return(
-                            <div  key={index}>
-                                <p>{nutrivalue.label} {nutrivalue.total.toFixed()}  {nutrivalue.unit}  </p>                         
-                            </div>
-                        )}
+                    if (index >= 3) return;
+                    return(
+                    <div  key={index}>
+                        <p>{nutrivalue.label} {nutrivalue.total.toFixed()}  {nutrivalue.unit}  </p>                         
+                    </div>)
                     })
                 }
-               
             </div>
             <hr className='line'/>
             {ingridients.map ((line, index) => {
