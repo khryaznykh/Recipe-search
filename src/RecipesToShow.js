@@ -19,8 +19,8 @@ function RecipesToShow({name, cuisine, image, calories, digest, ingridients}) {
                 <p>{calories.toFixed()} cal</p>
             </div>
             <div className="container">
-                {digest.map ((nutrivalue, index) => {
-                    if (index >= 3) return;
+                {digest.slice(0, 3).map ((nutrivalue, index) => {
+                    
                     return(
                     <div  key={index}>
                         <p>{nutrivalue.label} {nutrivalue.total.toFixed()}  {nutrivalue.unit}  </p>                         
